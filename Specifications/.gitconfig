@@ -1,0 +1,9 @@
+[user]
+	name = Entmoot737
+	email = entmoot737@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[color]
+	ui = auto
