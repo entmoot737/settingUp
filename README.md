@@ -46,7 +46,7 @@
         ```
         You can now delete this repository if desired
     1. Install YouCompleteMe
-        * navigate into your .vimrc file
+        * Navigate into your .vimrc file
         ```shell
         vim .vimrc
         ```
@@ -135,7 +135,7 @@
         ```
         You can now delete this repository if desired
     1. Install YouCompleteMe
-        * navigate into your .vimrc file
+        * Navigate into your .vimrc file
         ```shell
         vim .vimrc
         ```
