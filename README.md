@@ -22,12 +22,26 @@
         them now
         ```shell
         cd SettingUp
+        ```
+        ```shell
         cp .vimrc ~
+        ```
+        ```shell
         cp -R .vim ~
+        ```
+        ```shell
         cp -R .zsh-plugins ~
+        ```
+        ```shell
         cp -R .zsh-syntax-highlighting ~
+        ```
+        ```shell
         cp .zshrc ~
+        ```
+        ```shell
         cd
+        ```
+        ```shell
         source .zshrc
         ```
         You can now delete this repository if desired
@@ -53,19 +67,19 @@
         * Search for 'run applescript' and add it
         * Paste this code
             ```
-                on run {input}
-                   set the_path to POSIX path of input
-                   set cmd to "vim " & quoted form of the_path
-                   tell application "System Events" to set terminalIsRunning to exists application process "Terminal"
-                   tell application "Terminal"
-                      activate
-                      if terminalIsRunning is true then
-                         do script with command cmd
-                      else
-                         do script with command cmd in window 1
-                      end if
-                   end tell
-                end run
+            on run {input}
+               set the_path to POSIX path of input
+               set cmd to "vim " & quoted form of the_path
+               tell application "System Events" to set terminalIsRunning to exists application process "Terminal"
+               tell application "Terminal"
+                  activate
+                  if terminalIsRunning is true then
+                     do script with command cmd
+                  else
+                     do script with command cmd in window 1
+                  end if
+               end tell
+            end run
             ```
         * Save the file under applications
         * To use, open file with this application by pressing command + i on the file 
@@ -97,12 +111,26 @@
         them now
         ```shell
         cd SettingUp
+        ```
+        ```shell
         cp .vimrc ~
+        ```
+        ```shell
         cp -R .vim ~
+        ```
+        ```shell
         cp -R .zsh-plugins ~
+        ```
+        ```shell
         cp -R .zsh-syntax-highlighting ~
+        ```
+        ```shell
         cp .zshrc ~
+        ```
+        ```shell
         cd
+        ```
+        ```shell
         source .zshrc
         ```
         You can now delete this repository if desired
