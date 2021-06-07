@@ -1,102 +1,122 @@
-# Configuration Guide
+# Installation
 
-1. ## Switching to zsh
-    * Check to see if you have zsh already installed
+1. ## Mac Installation
+    1. Install Homebrew
         ```shell
-            zsh --version
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         ```
-        If you get a version of 4.3.9 or higher, you should be good
-    * Make zsh your default shell
+    1. Install Dependencies
         ```shell
-             chsh -s $(which zsh)
+        brew install git vim cmake zsh node go mono npm python3 java
         ```
-        To put bash back as your default shell, just use the same command except 
-        switch 'zsh' for 'bash'
-        You need to log out and log back in to view these changes
-
-1. ## Install vim and cmake (Use brew to install things on mac)
-    * Delete your .zshrc and .vimrc files
+    1. Switch default shell to zsh
         ```shell
-            rm .zshrc .vimrc
+        chsh -s $(which zsh)
         ```
-
-1. ## Cloning this repository
-    * To download this repository
+        After entering this command, restart your terminal session
+    1. Download and Install Configuration Files
         ```shell
-            git clone https://github.com/Entmoot737/Configurations
+        git clone https://github.com/Entmoot737/SettingUp
         ```
-
-1. ## Installing this repository
-    * Navigate into the repository 
-    * Add packages into your home directory
+        If you already have a .vimrc file, a .zshrc file, or a .vim directory, delete or move
+        them now
         ```shell
-            cp -R .vim ~
-            cp -R .oh-my-zsh ~
-            cp .vimrc ~
-            cp .zshrc ~
-            cp .gitconfig ~
+        cd SettingUp
+        cp .vimrc ~
+        cp -R .vim ~
+        cp -R .zsh-plugins ~
+        cp -R .zsh-syntax-highlighting ~
+        cp .zshrc ~
+        cd
+        source .zshrc
         ```
-    * Copy the Rest of the backup folders to your home directory
-    * Install vim packages
+        You can now delete this repository if desired
+    1. Install YouCompleteMe
+        * navigate into your .vimrc file
         ```shell
-            vim .vimrc
-            :PlugInstall
-            :PluginInstall
-            :wq
-            cd ~/.vim/plugged/YouCompleteMe
-            python3 install.py --all
+        vim .vimrc
         ```
-    * Configure .zshrc
-        ``` zsh
-            vim .zshrc
-        ```
-        Edit the line that contains your username to your computer's
-
-1. ## Installing z
-    * To add z functionality:
+        * Install Vundle plugins with ':PluginInstall'
+        * Navigate to the YouCompleteMe repository after exiting your .vimrc file (':q', ':wq')
         ```shell
-            git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+        cd .vim/bundle/YouCompleteMe
+        ```
+        * Install YouCompleteMe
+        ```shell
+        python3 install.py --all
         ```
 
-1. ## Programs and Apps to Install
-    * python3
-    * pip3
-    * pygame
-    * Flask
-    * matplotlib
-    * yfinance
-    * Discord
-    * Adobe products
-    * Microsoft office
-    * Firefox
-    * Google chrome
-    * LockDown Browser
-    * Vlc
-    * Spotify
-    * thinkorswim
-    * virtualBox
-    * zoom
+    1. Create an application to open a file with Vim (Optional)
+        * Open Automator
+        * Select New Document
+        * Click Application
+        * Search for 'run applescript' and add it
+        * Paste this code
+            ```
+                on run {input}
+                   set the_path to POSIX path of input
+                   set cmd to "vim " & quoted form of the_path
+                   tell application "System Events" to set terminalIsRunning to exists application process "Terminal"
+                   tell application "Terminal"
+                      activate
+                      if terminalIsRunning is true then
+                         do script with command cmd
+                      else
+                         do script with command cmd in window 1
+                      end if
+                   end tell
+                end run
+            ```
+        * Save the file under applications
+        * To use, open file with this application by pressing command + i on the file 
 
-1. ## Optional: Adding an application to open to Vim (If on Mac)
-    * Open Automator
-    * Select New Document
-    * Click Application
-    * Search for 'run applescript' and add it
-    * Paste this code
+1. ## Linux Installation
+    1. Install Dependencies
+        * Use your package manager to install:
+        * git
+        * vim
+        * zsh
+        * zsh-completions
+        * cmake
+        * nodejs
+        * go
+        * mono
+        * npm
+        * python3 
+        * jdk
+    1. Switch default shell to zsh
+        ```shell
+        chsh -s $(which zsh)
         ```
-            on run {input}
-               set the_path to POSIX path of input
-               set cmd to "vim " & quoted form of the_path
-               tell application "System Events" to set terminalIsRunning to exists application process "Terminal"
-               tell application "Terminal"
-                  activate
-                  if terminalIsRunning is true then
-                     do script with command cmd
-                  else
-                     do script with command cmd in window 1
-                  end if
-               end tell
-            end run
+        After entering this command, restart your terminal session
+    1. Download and Install Configuration Files
+        ```shell
+        git clone https://github.com/Entmoot737/SettingUp
         ```
-    * Save the file under applications
-    * To use, open file with this application by pressing command + i on the file 
+        If you already have a .vimrc file, a .zshrc file, or a .vim directory, delete or move
+        them now
+        ```shell
+        cd SettingUp
+        cp .vimrc ~
+        cp -R .vim ~
+        cp -R .zsh-plugins ~
+        cp -R .zsh-syntax-highlighting ~
+        cp .zshrc ~
+        cd
+        source .zshrc
+        ```
+        You can now delete this repository if desired
+    1. Install YouCompleteMe
+        * navigate into your .vimrc file
+        ```shell
+        vim .vimrc
+        ```
+        * Install Vundle plugins with ':PluginInstall'
+        * Navigate to the YouCompleteMe repository after exiting your .vimrc file (':q', ':wq')
+        ```shell
+        cd .vim/bundle/YouCompleteMe
+        ```
+        * Install YouCompleteMe
+        ```shell
+        python3 install.py --all
+        ```
