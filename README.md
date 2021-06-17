@@ -19,7 +19,7 @@
         After entering this command, restart your terminal session
     1. Download and Install Configuration Files
         ```shell
-        git clone https://github.com/Entmoot737/SettingUp
+        git clone https://github.com/entmoot737/settingUp
         ```
         If you already have a .vimrc file, a .zshrc file, or a .vim directory, delete or move
         them now
@@ -101,7 +101,7 @@
         After entering this command, restart your terminal session
     1. Download and Install Configuration Files
         ```shell
-        git clone https://github.com/Entmoot737/SettingUp
+        git clone https://github.com/entmoot737/settingUp
         ```
         If you already have a .vimrc file, a .zshrc file, or a .vim directory, delete or move
         them now
