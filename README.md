@@ -7,7 +7,7 @@
         ```
     1. Install Dependencies
         ```shell
-        brew install git vim cmake zsh node go mono npm python3 java
+        brew install git vim cmake zsh npm python3
         ```
     1. Switch default shell to zsh
         ```shell
@@ -45,20 +45,6 @@
         source .zshrc
         ```
         You can now delete this repository if desired
-    1. Install YouCompleteMe
-        * Navigate into your .vimrc file
-        ```shell
-        vim .vimrc
-        ```
-        * Install Vundle plugins with ':PluginInstall'
-        * Navigate to the YouCompleteMe repository after exiting your .vimrc file (':q', ':wq')
-        ```shell
-        cd .vim/bundle/YouCompleteMe
-        ```
-        * Install YouCompleteMe
-        ```shell
-        python3 install.py --all
-        ```
 
     1. Create an application to open a file with Vim (Optional)
         * Open Automator
@@ -92,12 +78,8 @@
         * zsh
         * zsh-completions
         * cmake
-        * nodejs
-        * go
-        * mono
         * npm
         * python3 
-        * jdk
     1. Switch default shell to zsh
         ```shell
         chsh -s $(which zsh)
@@ -134,17 +116,3 @@
         source .zshrc
         ```
         You can now delete this repository if desired
-    1. Install YouCompleteMe
-        * Navigate into your .vimrc file
-        ```shell
-        vim .vimrc
-        ```
-        * Install Vundle plugins with ':PluginInstall'
-        * Navigate to the YouCompleteMe repository after exiting your .vimrc file (':q', ':wq')
-        ```shell
-        cd .vim/bundle/YouCompleteMe
-        ```
-        * Install YouCompleteMe
-        ```shell
-        python3 install.py --all
-        ```
