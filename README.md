@@ -1,7 +1,7 @@
 # About
-This repository contains vim and zsh configurations
-Following the installation instructions will download and configure vim with many features including autocompletion and change your default shell to zsh.
-Disclaimer: These configuraitons have been tested on MacOS only and not yet any Linux or other operating systems
+* This repository contains vim and zsh configurations
+* Following the installation instructions will download and configure vim with many features including autocompletion and change your default shell to zsh.
+* Disclaimer: These configuraitons have been tested on MacOS only and not yet any Linux or other operating systems
 
 
 # Installation
