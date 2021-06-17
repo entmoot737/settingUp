@@ -1,6 +1,6 @@
 # Installation
 
-1. ## Mac Installation
+1. ## MacOS Installation
     1. Install Homebrew
         ```shell
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
