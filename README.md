@@ -7,7 +7,8 @@
         ```
     1. Install Dependencies
         ```shell
-        brew install git vim cmake zsh npm python3
+        brew install git vim cmake zsh npm python3 pip3
+        pip3 install jedi
         ```
     1. Switch default shell to zsh
         ```shell
