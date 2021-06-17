@@ -8,6 +8,8 @@
     1. Install Dependencies
         ```shell
         brew install git vim cmake zsh npm python
+        '''
+        '''shell
         pip3 install jedi
         ```
     1. Switch default shell to zsh
@@ -38,6 +40,13 @@
         ```
         ```shell
         cp .zshrc ~
+        ```
+        ```shell
+        cp .clang_complete ~
+        ```
+        If you want to disable the message when opening a new shell instance: add the following file
+        ```shell
+        cp .hushlogin ~
         ```
         ```shell
         cd
@@ -80,7 +89,8 @@
         * zsh-completions
         * cmake
         * npm
-        * python3 
+        * python3
+        * Use pip3 to install jedi 
     1. Switch default shell to zsh
         ```shell
         chsh -s $(which zsh)
@@ -109,6 +119,13 @@
         ```
         ```shell
         cp .zshrc ~
+        ```
+        ```shell
+        cp .clang_complete ~
+        ```
+        If you want to disable the message when opening a new shell instance: add the following file
+        ```shell
+        cp .hushlogin ~
         ```
         ```shell
         cd
