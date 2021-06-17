@@ -1,7 +1,16 @@
+# Entmoot737's .zshrc file
+
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vi'
+fi
 
 # Completion
 autoload -Uz compinit && compinit
@@ -19,8 +28,8 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{red}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 
-autoload -Uz promptinit
-promptinit
+#autoload -Uz promptinit
+#promptinit
 # End Prompts
 
 # Add Aliases here
@@ -30,10 +39,12 @@ alias fgrep='fgrep --color=auto'
 alias md='mkdir -p'
 alias rd='rmdir'
 alias l='ls -AG'
-alias ls -l='ls -lAhG'
-alias ls='ls -G'
 alias g++='g++ -std=c++17'
 # End Aliases
+
+# Adding New colors for ls -G output
+export LSCOLORS=GxDxcxdxFxegedabagacad
+# Ending new colors section
 
 # Plugins
 source ~/.zsh-plugins/zsh-z.plugin.zsh
