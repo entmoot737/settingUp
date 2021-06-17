@@ -45,9 +45,9 @@
         cp .clang_complete ~
         ```
         If you want to disable a message that might be popping up when you start a new terminal session: add the following file (.hushlogin)
-        ```shell
-        cp .hushlogin ~
-        ```
+            ```shell
+            cp .hushlogin ~
+            ```
         ```shell
         cd
         ```
@@ -127,9 +127,9 @@
         cp .clang_complete ~
         ```
         If you want to disable a message that might be popping up when you start a new terminal session: add the following file (.hushlogin)
-        ```shell
-        cp .hushlogin ~
-        ```
+            ```shell
+            cp .hushlogin ~
+            ```
         ```shell
         cd
         ```
