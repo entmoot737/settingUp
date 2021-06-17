@@ -44,7 +44,7 @@
         ```shell
         cp .clang_complete ~
         ```
-        If you want to disable a message that might be popping up when you start a new terminal session, run the this command:
+        If you want to disable a message that might be popping up when you start a new terminal session, run this command:           
             ```
             cp .hushlogin ~
             ```
@@ -126,7 +126,7 @@
         ```shell
         cp .clang_complete ~
         ```
-        If you want to disable a message that might be popping up when you start a new terminal session, run the this command:
+        If you want to disable a message that might be popping up when you start a new terminal session, run this command:          
             ```
             cp .hushlogin ~
             ```
