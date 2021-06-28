@@ -150,7 +150,7 @@ set visualbell
 
 "to use spell check
 set spelllang=en_us
-"set spellfile=~/Dropbox/Vim/Language/en.utf-8.add
+"set spellfile=~/.vim/spell/en.utf-8.add
 
 "And reset terminal code for visual bell. If visualbell is set, vim will neither
 "flash nor beep. If visualbell is unset, this does nothing
@@ -206,7 +206,7 @@ set smarttab
 
 " wrap lines when get to end of window or not
 set wrap
-set textwidth=100
+"set textwidth=100
 "set nowrap
 
 "make column on right side for end of text
