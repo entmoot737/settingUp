@@ -150,7 +150,7 @@ set visualbell
 
 "to use spell check
 set spelllang=en_us
-"set spellfile=~/.vim/spell/en.utf-8.add
+set spellfile=~/.vim/spell/en.utf-8.add
 
 "And reset terminal code for visual bell. If visualbell is set, vim will neither
 "flash nor beep. If visualbell is unset, this does nothing
