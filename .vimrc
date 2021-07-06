@@ -88,8 +88,8 @@ set lazyredraw
 set showmatch
 
 "move vertically by visual line (don't skip wrapped lines)
-"nmap j gj
-"nmap k gk
+nmap j gj
+nmap k gk
 
 "show partial commands in last line of the screen
 ""always show statusline"
