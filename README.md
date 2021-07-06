@@ -30,7 +30,7 @@
         If you already have a .vimrc file, a .zshrc file, or a .vim directory, delete or move
         them now
         ```shell
-        cd SettingUp
+        cd settingUp
         ```
         ```shell
         cp .vimrc ~
