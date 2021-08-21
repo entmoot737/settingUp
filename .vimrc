@@ -181,7 +181,7 @@ set expandtab
 nnoremap <C-a> :nohl<CR>
 
 "remap <ESC> to jk 
-"inoremap jj <ESC> 
+inoremap jj <ESC> 
 
 "make encoding utf-8
 set encoding=utf-8
